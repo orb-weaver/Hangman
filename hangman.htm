@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Hangman</title>
+    <link href="hangman.css" type="text/css" rel="stylesheet">
+    <script type="text/javascript" src='http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js'></script>
+    <script type="text/javascript" src="hangman.js"></script>
+  </head>
+  <body>
+
+    <h1>Hangman</h1>
+    <div>
+      <p>
+        Let's play Hangman!
+      </p>
+      <p>
+        __ __ __ __ __ __ __ __ <br>
+        Also guessed: A<br>
+        Number of tries remaining:
+
+        <button type="button" class="left">&nbsp;</button>
+        <button type="button" class="left">&nbsp;</button>
+        <button type="button" class="left">&nbsp;</button>
+        <button type="button" class="left">&nbsp;</button>
+        <button type="button" class="left">&nbsp;</button>
+        <button type="button" class="gone">&nbsp;</button>
+        <button type="button" class="gone">&nbsp;</button>
+        <button type="button" class="gone">&nbsp;</button>
+        <button type="button" class="hidden">&nbsp;</button>
+        <button type="button" class="hidden">&nbsp;</button>
+        <!-- (of 10): 10<br> -->
+      </p>
+    </div>
+    <div>
+      <p>
+        Select the length of the word: 
+        <button type="button" class="notSelectable">6</button>
+        <button type="button" class="notLength">7</button>
+        <button type="button" class="notLength">8</button>
+        <button type="button" class="notLength">9</button>
+        <button type="button" class="length">10</button>
+        <button type="button" class="notLength">11</button>
+        <button type="button" class="notLength">12</button>
+        <button type="button" class="notLength">Random</button>
+        <button type="button" class="notLength">Easy</button>
+        <button type="button" class="notLength">Hard</button><br>
+        <!-- Length: 8 -->
+      </p>
+      <p>
+        Select the number of tries:
+        <button type="button" class="notTries">6</button>
+        <button type="button" class="tries">7</button>
+        <button type="button" class="notTries">8</button>
+        <button type="button" class="notTries">9</button>
+        <button type="button" class="notTries">10</button><br>
+        <!-- Number of tries: 10 -->
+      </p>
+      <p>
+        When you're ready, select a letter<br>
+        <button type="button" class="alreadySelected">A</button>
+        <button type="button" class="available">B</button>
+        <button type="button" class="available">C</button>
+        <button type="button" class="available">D</button>
+        <button type="button" class="available">E</button>
+        <button type="button">F</button>
+        <button type="button">G</button>
+        <button type="button">H</button>
+        <button type="button">I</button>
+        <button type="button">J</button>
+        <button type="button">K</button>
+        <button type="button">L</button>
+        <button type="button">M</button>
+        <button type="button">N</button><br>
+        <button type="button">O</button>        
+        <button type="button">P</button>
+        <button type="button">Q</button>
+        <button type="button">R</button>
+        <button type="button">S</button>
+        <button type="button">T</button>
+<button type="button">T</button>
+<button type="button">V</button>
+<button type="button">W</button>
+        <button type="button">X</button>
+        <button type="button">Y</button>
+        <button type="button">Z</button>
+<button type="button">Quit</button>
+      </p>
+      <p>
+        After
+        the first letter is selected, the word length selector and the 
+        number of tries selector are disabled.<br>
+        As each letter is selected, if it's in the word, the appropriate<br>
+        blanks are filled in.  if not, one of the counters is nuked.  the<br>
+        letter is disabled so it can't be selected again.
+      <p>
+        After the word is finished or the number of tries runs out or
+        the player clicks on Quit:<br>
+        (quit): The word is ___; better luck next time<br>
+        (tries run out): The word is _____; try again<br>
+        (0 mistakes): You guessed the word with no mistakes!<br>  
+         unbelievable astounding amazing remarkable<br>
+        (1-2 mistakes): You guessed the word with only # mistakes! <br>
+	marvelous awesome spectacular sensational<br>
+        (3-5 mistakes): You guessed the word with # mistakes.<br>
+         great delightful wonderful<br>
+        (6-10 mistakes): You guessed the word with # mistakes.<br>
+         good fine satisfactory <br>
+        (other words):fabulous stunning stupendous <br>
+          outstanding mind-boggling fantastic 
+      </p>
+      <p>
+        reset board so player can try again.  
+      </p>
+      <ul>
+        2nd pass: 
+        <li>improve the responsive design
+        <li>a timer, 
+        <li>a countdown timer, 
+        <li>the ability to select what amount of time is in the
+          countdown timer
+        <li>some sort of points scheme
+      </ul>
+      <ul>
+        3rd pass:
+        <li>read in a larger word list
+        <li>history of words and # of mistakes and time, 
+        <li>best time,
+        <li>don't repeat words
+      </ul>
+    </div>
+
+  </body>
+</html>

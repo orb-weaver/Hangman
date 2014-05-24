@@ -1,0 +1,47 @@
+body {
+  width: 100%;
+  height: 100%;
+}
+
+.alreadySelected {
+  background-color: #aaaaaa;
+}
+
+.available {
+  background-color: cyan;
+}
+
+.length {
+  background-color: yellow;
+}
+
+.notLength {
+  background-color: #00ff00;
+}
+
+.tries {
+  background-color: #ff8888;
+}
+
+.notTries {
+  background-color: #cc00ff;
+}
+
+.notSelectable {
+  background-color: gray;
+}
+
+.left {
+  background-color: yellow;
+  height: 15px;
+  width: 15px;
+}
+
+.gone {
+  background-color: gray;
+  height: 15px;
+  width: 15px;
+}
+.hidden {
+  display: none;
+}
